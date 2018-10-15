@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2019
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleSearch", "BibleSearch\BibleSearch.csproj", "{1928DE56-412D-4A02-A978-E708D26C42AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibleSearch.Tests", "BibleSearch.Tests\BibleSearch.Tests.csproj", "{21D99AED-A792-4F5B-A542-8465119C626E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1928DE56-412D-4A02-A978-E708D26C42AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1928DE56-412D-4A02-A978-E708D26C42AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1928DE56-412D-4A02-A978-E708D26C42AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1928DE56-412D-4A02-A978-E708D26C42AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21D99AED-A792-4F5B-A542-8465119C626E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21D99AED-A792-4F5B-A542-8465119C626E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21D99AED-A792-4F5B-A542-8465119C626E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21D99AED-A792-4F5B-A542-8465119C626E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E47EB32D-87A5-4C69-ADEA-1A938328F370}
+	EndGlobalSection
+EndGlobal

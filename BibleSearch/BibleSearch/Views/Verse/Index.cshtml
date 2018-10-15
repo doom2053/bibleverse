@@ -1,0 +1,12 @@
+﻿@{
+    ViewBag.Title = "Verse Search";
+}
+<h3>Search for verses that contain text.</h3>
+@using (Html.BeginForm("Results", "Verse", FormMethod.Get))
+{
+
+    @Html.TextBox("SearchTerms");
+
+    <input type="hidden" name="StartIndex" value="0" />
+    <input type="submit" value="Search" />
+}

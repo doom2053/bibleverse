@@ -1,0 +1,11 @@
+DELIMITER //
+CREATE PROCEDURE SearchBibleGetCount(
+   IN searchTerm VARCHAR(255)
+)
+BEGIN
+   SELECT COUNT(*)
+   FROM bible
+   WHERE MATCH (line)
+   AGAINST (searchTerm IN BOOLEAN MODE);
+END //
+DELIMITER ;

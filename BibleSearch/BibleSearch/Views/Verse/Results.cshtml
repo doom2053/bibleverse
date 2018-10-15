@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BibleSearch.Models.VerseModel>
+@{
+    ViewBag.Title = "Results";
+}
+<h2>Search Results</h2>
+Showing @ViewBag.FriendlyStart - @ViewBag.FriendlyEnd of @ViewBag.Count
+<br />
+@if (ViewBag.FriendlyStart > 1)
+{
+    @Html.ActionLink("Previous", "Results", "Verse", new { SearchTerms = @ViewBag.SearchTerms, StartIndex = @ViewBag.PreviousIndex }, null);
+    @Html.Raw("&nbsp;");
+}
+@if (ViewBag.FriendlyEnd < ViewBag.Count)
+{
+    @Html.ActionLink("Next", "Results", "Verse", new { SearchTerms = @ViewBag.SearchTerms, StartIndex = @ViewBag.StartIndex }, null);
+}
+<br />
+<br />
+<table>
+    <tr>
+        <th>
+            Book
+        </th>
+        <th>
+            Chapter
+        </th>
+        <th>
+            Verse
+        </th>
+        <th>
+            Text
+        </th>
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Book)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Chapter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Verse)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Text)
+            </td>
+        </tr>
+    }
+</table>
